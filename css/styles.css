@@ -99,6 +99,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  align-items: center;
   color: var(--second-text-color);
 }
 .link.link-tel:hover,
@@ -106,6 +107,27 @@ body {
 .link.link-tel:focus,
 .link.link-mail:focus {
   color: var(--accent-text-color);
+}
+.link.link-tel::before {
+  content: "";
+  display: inline-flex;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url("../image/lette.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.link.link-mail::before {
+  content: "";
+  display: inline-flex;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url("../image/vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .flex-header-nav,
 .navigation,
@@ -131,6 +153,17 @@ body {
 /* -----------------------------Hero------------------------------ */
 .hero {
   background: var(--darck-background);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-height: 600px;
+  width: 1600px;
+  margin: 0 auto;
 }
 .hero-flex {
   padding-top: 200px;
