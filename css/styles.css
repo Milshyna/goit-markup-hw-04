@@ -117,7 +117,7 @@ body {
 .flex-header {
   padding-top: 25px;
   padding-bottom: 25px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .flex-header-nav,
 .navigation {
@@ -134,6 +134,7 @@ body {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: currentColor;
 }
 .flex-contact-item {
   display: flex;
@@ -144,13 +145,7 @@ body {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-}
-
-.flex-contact-item:hover .flex-tel-icon {
-  fill: var(--accent-text-color);
-}
-.flex-contact-item:hover .flex-contact-icon {
-  fill: var(--accent-text-color);
+  fill: currentColor;
 }
 
 /* -----------------------------Hero------------------------------ */
@@ -170,7 +165,7 @@ body {
 }
 .hero-flex {
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 .hero .hero-title {
   font-weight: 900;
@@ -243,8 +238,7 @@ body {
   background: #f5f4fa;
   border-radius: 4px;
   justify-content: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  align-items: center;
   margin-bottom: 30px;
 }
 .propet-icon-item {
