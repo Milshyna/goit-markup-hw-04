@@ -95,6 +95,7 @@ body {
 }
 .link.link-tel,
 .link.link-mail {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -128,7 +129,7 @@ body {
 }
 
 .flex-contact-item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 .flex-contact-icon {
   width: 16px;
@@ -139,7 +140,6 @@ body {
 .flex-contact-item {
   display: flex;
   align-items: center;
-  margin-left: 30px;
 }
 .flex-tel-icon {
   width: 10px;
